@@ -1,0 +1,180 @@
+{
+  "meta": {
+    "author": "발표자",
+    "body_scale": "1.5",
+    "deck_title": "제4강_선별압수의 예외",
+    "scaffold": "crimson-bright",
+    "sub": "제4강_선별압수의 예외",
+    "title": "디지털포렌식과 형사소송법"
+  },
+  "slides": [
+    {
+      "author": "부산지방고용노동청 광역노동기준감독과",
+      "date": "2026.09.15.",
+      "kicker": "PRESENTATION",
+      "signature": "",
+      "subtitle": "데이터 전부복제와 원본 반출",
+      "title_en": "제4강 선별압수의 예외",
+      "title_ko": "디지털포렌식과 형사소송법",
+      "type": "title"
+    },
+    {
+      "body_html": "<ul><li>디지털포렌식 분석과정은 모두 압수수색 과정임을 이해한다</li><li>전부복제 및 원본반출의 관련 규정을 이해한다</li></ul>",
+      "footer_note": "",
+      "heading_en": "Heading",
+      "heading_ko": "학습목표",
+      "type": "content"
+    },
+    {
+      "_도움말": "목차는 비워 두세요. build 하면 덱 안의 chapter 슬라이드 제목·번호가 자동으로 채워집니다.",
+      "footer_note": "",
+      "heading_en": "",
+      "heading_ko": "",
+      "type": "toc"
+    },
+    {
+      "signature": "chapter // {{chapter_num}} of {{chapter_total}}",
+      "title_en": "bitstream copy",
+      "title_ko": "전부 복제",
+      "type": "chapter"
+    },
+    {
+      "_도움말": "figure_html 에 <img src=\"C:/사진/a.jpg\"> 또는 <video src=...> 또는 <table>...</table> 를 넣으세요. 사진·영상은 절대경로나 파일명을 적고 build 하면 덱 images//videos/ 로 자동 복사·경로 정리됩니다.",
+      "caption": "우리부는 대검찰청 규정의 copy",
+      "figure_html": "<img src=\"images/Snipaste_2026-07-27_10-29-37.png\" style=\"width: 100%;\">",
+      "footer_note": "",
+      "heading_en": "디지털 증거수사 규칙",
+      "heading_ko": "전부복제 및 원본반출에 관한 각 기관 규정",
+      "type": "visual"
+    },
+    {
+      "caption": "",
+      "figure_html": "<img src=\"images/Snipaste_2026-07-27_10-43-47.png\" style=\"width: 100%;\">",
+      "footer_note": "",
+      "heading_en": "현저히 곤란, 평온의 침해, 조작",
+      "heading_ko": "전부 복제 등에 관한 내용",
+      "type": "visual"
+    },
+    {
+      "caption": "",
+      "figure_html": "<img src=\"images/Snipaste_2026-07-27_11-19-54.png\" style=\"width: 100%;\">",
+      "footer_note": "",
+      "heading_en": "",
+      "heading_ko": "데이터 전부 복제의 목적",
+      "type": "visual"
+    },
+    {
+      "body_html": "<ul><li>위변조: PC(삭제, 은폐한 정보 정밀 분석)</li><li>복잡성: 모바일, 공작기계(현장에서 선별획득하기에 시간적, 기술적으로 어려움)</li><li>대량성, 삭제 데이터 복구: CCTV(삭제한 자료 복구, 평온 유지 등)</li></ul>",
+      "footer_note": "",
+      "heading_en": "",
+      "heading_ko": "전부복제를 하는 경우",
+      "type": "content"
+    },
+    {
+      "chapter_figure": "",
+      "signature": "section // {{chapter_num}} of {{chapter_total}}",
+      "title_en": "휴대전화 등 압수목적물의 반출은 압수인가",
+      "title_ko": "원본반출",
+      "type": "chapter"
+    },
+    {
+      "body_html": "<ul><li><strong>압수물</strong>은 범증을 입증할 사건관계 <strong>증거물</strong></li><li>디지털 증거 수사는 <strong>압수물</strong>(디지털 증거)과 <strong>압수 목적물</strong>(정보저장매체) 양립</li><li>아래의 압수수색 <strong>절차적 사항</strong>에 대한 해답</li><li class=\"sub\">1. <strong>압수목록</strong>에 압수물과 압수 목적물 둘 중 무엇을 기재하여야 하는가</li><li class=\"sub\">2. 압수 목적물은 압수물 <strong>환부 지휘</strong> 대상인가</li><li class=\"sub\">3. 압수 목적물은 그 자체로 <strong>사건을 입증할 증거</strong>인가</li></ul>",
+      "footer_note": "",
+      "heading_en": "",
+      "heading_ko": "원본반출을 따로 다루는 이유",
+      "type": "content"
+    },
+    {
+      "caption": "",
+      "figure_html": "<img src=\"images/Snipaste_2026-07-27_14-25-15.png\" style=\"width: 100%;\">",
+      "footer_note": "",
+      "heading_en": "디지털포렌식 관련 논문 함께 읽기",
+      "heading_ko": "원본반출한 정보저장매체의 지위",
+      "type": "visual"
+    },
+    {
+      "caption": "",
+      "figure_html": "<img src=\"images/Snipaste_2026-07-27_15-07-06.png\" style=\"width: 100%;\">",
+      "footer_note": "",
+      "heading_en": "",
+      "heading_ko": "정보저장매체 원본반출과 압수수색",
+      "type": "visual"
+    },
+    {
+      "chapter_figure": "",
+      "signature": "section // {{chapter_num}} of {{chapter_total}}",
+      "title_en": "압수수색할 대상의 특정",
+      "title_ko": "일반 영장주의의 금지",
+      "type": "chapter"
+    },
+    {
+      "body_html": "<ul><li>담임 선생님은 철수에게 하루 있었던 일을 일기로 적어 제출하는 과제를 부여했다. 다음 날 철수가 과제를 제출했더니 담임 선생님이 수업 중 일기를 읽었다면</li><li class=\"sub\">1. 부모님 몰래 PC방에 간 사실</li><li class=\"sub\">2. 일기에 기재한 철수의 학교 성적</li><li class=\"sub\">3. 친구와 보낸 일상적 내용</li><li>-&gt; 모두 공개하기 싫은 정보이지만 주관적으로 더욱 공개하기 싫은 정보 또는 일기의 특성상 교사가 확인할 정보가 존재함</li></ul>",
+      "footer_note": "",
+      "heading_en": "무엇이 더 민감할까",
+      "heading_ko": "철수의 일기 제출",
+      "type": "content"
+    },
+    {
+      "body_html": "<ul><li>&lt;사전적 제한&gt; 압수수색할 범위를 사전에 특정</li><li class=\"sub\">휴대전화, 원격지 서버 등 별도 명시(개인정보, 영업기밀 등)</li><li class=\"sub\">예) -&gt; PC만 영장 기재 후 PC 카카오톡, 워크스페이스, 공유폴더 등 원격지 전자정보 및 휴대전화 등 수사 불가</li><li>&lt;사후적 제한&gt; 방어권 부여(참여권 보장 등)</li><li class=\"sub\">참여권 보장, 선별 범위(기간, 탐색 범위 등) 특정</li><li class=\"sub\">선별증거의 <strong>사건 관련성</strong> 대립시 검사 수사 지휘 아래 증거 선별(변호인 의견 기재)</li></ul>",
+      "footer_note": "",
+      "heading_en": "",
+      "heading_ko": "압수수색의 범위 제한",
+      "type": "content"
+    },
+    {
+      "caption": "포렌식 판례는 종근당 전|후로 나뉨",
+      "figure_html": "<img src=\"images/20241112_101926.jpg\">",
+      "footer_note": "",
+      "heading_en": "2024 디지털포렌식 워킹데이",
+      "heading_ko": "압수수색 영장 실무 대법원 가이드",
+      "type": "visual"
+    },
+    {
+      "caption": "",
+      "figure_html": "<img src=\"images/20241112_102649.jpg\">",
+      "footer_note": "",
+      "heading_en": "2024 디지털포렌식 워킹데이",
+      "heading_ko": "압수수색 영장 실무 대법원 가이드",
+      "type": "visual"
+    },
+    {
+      "caption": "대법원 2009. 3. 12. 선고 2008도763 판결(제주도지사)",
+      "figure_html": "<img src=\"images/20241112_103059.jpg\">",
+      "footer_note": "",
+      "heading_en": "2024 디지털포렌식 워킹데이",
+      "heading_ko": "압수수색 영장 실무 대법원 가이드",
+      "type": "visual"
+    },
+    {
+      "caption": "사건 감독관들이 놓치는 10일 반환 원칙 등",
+      "figure_html": "<img src=\"images/04_영장별지_상.JPG\" style=\"width: 100%;\">\n<img src=\"images/04_영장별지_하.JPG\" style=\"width: 100%;\">",
+      "footer_note": "",
+      "heading_en": "2011모1839 결정(대법원 전원합의체, 종근당)",
+      "heading_ko": "법원이 발부하는 [영장 별지]",
+      "type": "visual"
+    },
+    {
+      "chapter_figure": "",
+      "signature": "section // {{chapter_num}} of {{chapter_total}}",
+      "title_en": "숙제 함께하기",
+      "title_ko": "판례 함께 읽어보기",
+      "type": "chapter"
+    },
+    {
+      "footer_note": "",
+      "heading_en": "Key Takeaways",
+      "heading_ko": "핵심 정리",
+      "lead": "한 문장 결론",
+      "points_html": "<li>전부복제와 원본반출: 평온유지, 증거인멸, 현장 가능성(복잡성)</li><li>원본반출&lt;&gt;압수: 반출한 기기의 증거 선별 시 압수절차 적용</li><li>판례 함께 읽어보기: 압수수색 절차 전반 이해</li>",
+      "type": "summary"
+    },
+    {
+      "closing_en": "제5강 전자증거와 전문법칙",
+      "closing_ko": "다음 차시",
+      "contact": "",
+      "prompt": "",
+      "signature": "",
+      "type": "closing"
+    }
+  ]
+}

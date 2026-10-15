@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>제4강_선별압수의 예외</title>
+
+<!-- ─────────────────────────────────────────────
+  AI Context Header — self-describing deck
+  이 파일은 외부 AI에게 전달되어도 단독으로 분석 가능해야 함.
+  - 슬라이드 = <section class="slide type-*"> 요소
+  - 정확한 슬라이드 수는 head의 <script id="deckManifest">.slideCount 참고
+  - 테마 토큰은 theme.css의 :root 변수 참조
+  - 스캐폴드 출처: crimson-bright (Crimson Bright · 선명한 빨강) · gen_themes.py
+───────────────────────────────────────────── -->
+
+<meta name="deck:scaffold" content="crimson-bright">
+<meta name="deck:slide-count" content="22">
+
+<script type="application/json" id="deckManifest">
+{
+  "deck_title": "제4강_선별압수의 예외",
+  "scaffold": "crimson-bright",
+  "slide_count": 22,
+  "chapter_count": 4,
+  "slides": [
+    {
+      "index": 0,
+      "type": "title",
+      "title": "디지털포렌식과 형사소송법"
+    },
+    {
+      "index": 1,
+      "type": "content",
+      "title": "학습목표"
+    },
+    {
+      "index": 2,
+      "type": "toc",
+      "title": "목차"
+    },
+    {
+      "index": 3,
+      "type": "chapter",
+      "title": "전부 복제"
+    },
+    {
+      "index": 4,
+      "type": "visual",
+      "title": "전부복제 및 원본반출에 관한 각 기관 규정"
+    },
+    {
+      "index": 5,
+      "type": "visual",
+      "title": "전부 복제 등에 관한 내용"
+    },
+    {
+      "index": 6,
+      "type": "visual",
+      "title": "데이터 전부 복제의 목적"
+    },
+    {
+      "index": 7,
+      "type": "content",
+      "title": "전부복제를 하는 경우"
+    },
+    {
+      "index": 8,
+      "type": "chapter",
+      "title": "원본반출"
+    },
+    {
+      "index": 9,
+      "type": "content",
+      "title": "원본반출을 따로 다루는 이유"
+    },
+    {
+      "index": 10,
+      "type": "visual",
+      "title": "원본반출한 정보저장매체의 지위"
+    },
+    {
+      "index": 11,
+      "type": "visual",
+      "title": "정보저장매체 원본반출과 압수수색"
+    },
+    {
+      "index": 12,
+      "type": "chapter",
+      "title": "일반 영장주의의 금지"
+    },
+    {
+      "index": 13,
+      "type": "content",
+      "title": "철수의 일기 제출"
+    },
+    {
+      "index": 14,
+      "type": "content",
+      "title": "압수수색의 범위 제한"
+    },
+    {
+      "index": 15,
+      "type": "visual",
+      "title": "압수수색 영장 실무 대법원 가이드"
+    },
+    {
+      "index": 16,
+      "type": "visual",
+      "title": "압수수색 영장 실무 대법원 가이드"
+    },
+    {
+      "index": 17,
+      "type": "visual",
+      "title": "압수수색 영장 실무 대법원 가이드"
+    },
+    {
+      "index": 18,
+      "type": "visual",
+      "title": "법원이 발부하는 [영장 별지]"
+    },
+    {
+      "index": 19,
+      "type": "chapter",
+      "title": "판례 함께 읽어보기"
+    },
+    {
+      "index": 20,
+      "type": "summary",
+      "title": "핵심 정리"
+    },
+    {
+      "index": 21,
+      "type": "closing",
+      "title": "다음 차시"
+    }
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
+
+<link rel="stylesheet" href="theme.css">
+
+<style>
+  /* 슬라이드 네비게이션 (프로토타입) */
+  html, body { overflow: hidden; }
+  body { background: #000; --body-scale: 1.5; }
+
+  /* 본문 글자 크기 조절 — 편집기 '덱 설정 > 본문 글자 크기'가 --body-scale 을 주입.
+     theme.css(위의 <link>) 뒤에 와서 본문 계열 font-size만 덮어쓴다(제목류 제외).
+     값 누락 시 var fallback=1 → 외관 불변. 기준값은 전 테마 공통.
+     --auto-boost 는 좁은(모바일형) 화면에서 fitCanvas()가 자동으로 키움. */
+  .content-body        { font-size: calc(1.4rem  * var(--body-scale, 1) * var(--auto-boost, 1)); }
+  .summary-lead        { font-size: calc(1.4rem  * var(--body-scale, 1) * var(--auto-boost, 1)); }
+  .summary-points li   { font-size: calc(1.25rem * var(--body-scale, 1) * var(--auto-boost, 1)); }
+  .visual-figure table { font-size: calc(1.1rem  * var(--body-scale, 1) * var(--auto-boost, 1)); }
+  .visual-caption      { font-size: calc(0.95rem * var(--body-scale, 1) * var(--auto-boost, 1)); }
+
+  /* 고정 캔버스(1600x900, 16:9) + 화면에 맞춰 축소/레터박스.
+     기기 종류를 감지하지 않고, 실제 뷰포트 비율로 판단(창 크기 조절·폴더블도 정확히 대응). */
+  .deck {
+    position: fixed; top: 50%; left: 50%;
+    width: 1600px; height: 900px;
+    transform: translate(-50%, -50%) scale(var(--canvas-scale, 1));
+    transform-origin: center center;
+  }
+  .deck > .slide {
+    position: absolute; inset: 0;
+    opacity: 0; visibility: hidden;
+    pointer-events: none;
+  }
+  .deck > .slide.active {
+    opacity: 1; visibility: visible;
+    pointer-events: auto;
+  }
+  .nav {
+    position: fixed; bottom: 2vh; left: 50%; transform: translateX(-50%);
+    z-index: 100; display: flex; gap: 0.5rem;
+    font-family: 'Inter', sans-serif; font-size: 0.7rem;
+    color: rgba(255,255,255,0.6);
+  }
+  .nav button {
+    background: rgba(0,0,0,0.4); border: 1px solid rgba(255,255,255,0.3);
+    color: white; padding: 0.4em 0.9em; cursor: pointer;
+    font-family: inherit; letter-spacing: 0.2em;
+  }
+  .nav button:hover { background: rgba(255,255,255,0.1); }
+</style>
+</head>
+<body>
+
+<div class="deck">
+<section class="slide type-title" data-slide-type="title">
+
+  <div class="wordmark">START</div>
+  <div class="bubbles"></div>
+
+  <div class="meta-tl">
+    <div class="title">디지털포렌식과 형사소송법</div>
+    <div class="sub">제4강_선별압수의 예외</div>
+  </div>
+
+  <div class="title-hero">
+    <div class="title-kicker">PRESENTATION</div>
+    <h1 class="title-ko">디지털포렌식과 형사소송법</h1>
+    <div class="divider"></div>
+    <div class="title-en">제4강 선별압수의 예외</div>
+    <p class="title-sub">데이터 전부복제와 원본 반출</p>
+  </div>
+
+  <div class="title-byline">
+    <span class="author">부산지방고용노동청 광역노동기준감독과</span>
+    <span class="sep"></span>
+    <span class="date">2026.09.15.</span>
+  </div>
+
+  <div class="signature"></div>
+
+</section>
+
+<section class="slide type-content" data-slide-type="content">
+
+  <div class="meta-tl">
+    <div class="title">디지털포렌식과 형사소송법</div>
+    <div class="sub">제4강_선별압수의 예외</div>
+  </div>
+
+  <div class="progress-tr" style="--progress-pct: 9%;">
+    <span class="now">C.00</span>
+    <span class="total"> · 02/22</span>
+    <div class="bar"></div>
+  </div>
+
+  <div class="content-grid">
+    <div class="content-heading">
+      <div class="heading-en">Heading</div>
+      <h2 class="heading-ko">학습목표</h2>
+      <div class="heading-bar"></div>
+    </div>
+    <div class="content-side"></div>
+    <div class="content-body">
+      <ul><li>디지털포렌식 분석과정은 모두 압수수색 과정임을 이해한다</li><li>전부복제 및 원본반출의 관련 규정을 이해한다</li></ul>
+    </div>
+  </div>
+
+  <div class="footer-note"></div>
+
+</section>
+
+<section class="slide type-toc" data-slide-type="toc">
+
+  <div class="wordmark">INDEX</div>
+  <div class="bubbles"></div>
+
+  <div class="meta-tl">
+    <div class="title">디지털포렌식과 형사소송법</div>
+    <div class="sub">제4강_선별압수의 예외</div>
+  </div>
+
+  <div class="toc-head">
+    <div class="heading-en">Contents</div>
+    <h2 class="heading-ko">목차</h2>
+    <div class="heading-bar"></div>
+  </div>
+
+  <ol class="toc-list">
+    <li class="toc-item" style="--i: 0;">
+  <span class="toc-num">01</span>
+  <span class="toc-text">
+    <span class="toc-ko">전부 복제</span>
+    <span class="toc-en">bitstream copy</span>
+  </span>
+</li>
+
+<li class="toc-item" style="--i: 1;">
+  <span class="toc-num">02</span>
+  <span class="toc-text">
+    <span class="toc-ko">원본반출</span>
+    <span class="toc-en">휴대전화 등 압수목적물의 반출은 압수인가</span>
+  </span>
+</li>
+
+<li class="toc-item" style="--i: 2;">
+  <span class="toc-num">03</span>
+  <span class="toc-text">
+    <span class="toc-ko">일반 영장주의의 금지</span>
+    <span class="toc-en">압수수색할 대상의 특정</span>
+  </span>
+</li>
+
+<li class="toc-item" style="--i: 3;">
+  <span class="toc-num">04</span>
+  <span class="toc-text">
+    <span class="toc-ko">판례 함께 읽어보기</span>
+    <span class="toc-en">숙제 함께하기</span>
+  </span>
+</li>
+
+  </ol>
+
+  <div class="footer-note"></div>
+
+</section>
+
+<section class="slide type-chapter" data-slide-type="chapter">
+
+  <div class="wordmark">CHAPTER</div>
+  <div class="bubbles"></div>
+
+  <div class="meta-tl">
+    <div class="title">디지털포렌식과 형사소송법</div>
+    <div class="sub">제4강_선별압수의 예외</div>
+  </div>
+
+  <div class="progress-tr" style="--progress-pct: 25%;">
+    <span class="now">01</span>
+    <span class="total"> / 04</span>
+    <div class="bar"></div>
+  </div>
+
+  <div class="chapter-figure"></div>
+
+  <div class="main">
+    <div class="chapter-kicker">
+      <span class="label">Chapter</span>
+      <span class="num">01</span>
+    </div>
+    <div class="chapter-title">전부 복제</div>
+    <div class="divider"></div>
+    <div class="chapter-en">bitstream copy</div>
+  </div>
+
+  <div class="signature">chapter // 01 of 04</div>
+
+</section>
+
+<section class="slide type-visual" data-slide-type="visual">
+
+  <div class="meta-tl">
+    <div class="title">디지털포렌식과 형사소송법</div>
+    <div class="sub">제4강_선별압수의 예외</div>
+  </div>
+
+  <div class="progress-tr" style="--progress-pct: 22%;">
+    <span class="now">C.01</span>
+    <span class="total"> · 05/22</span>
+    <div class="bar"></div>
+  </div>
+
+  <div class="visual-head">
+    <div class="heading-en">디지털 증거수사 규칙</div>
+    <h2 class="heading-ko">전부복제 및 원본반출에 관한 각 기관 규정</h2>
+    <div class="heading-bar"></div>
+  </div>
+
+  <div class="visual-stage">
+    <div class="visual-figure">
+      <img src="images/Snipaste_2026-07-27_10-29-37.png" style="width: 100%;">
+    </div>
+    <div class="visual-caption">우리부는 대검찰청 규정의 copy</div>
+  </div>
+
+  <div class="footer-note"></div>
+
+</section>
+
+<section class="slide type-visual" data-slide-type="visual">
+
+  <div class="meta-tl">
+    <div class="title">디지털포렌식과 형사소송법</div>
+    <div class="sub">제4강_선별압수의 예외</div>
+  </div>
+
+  <div class="progress-tr" style="--progress-pct: 27%;">
+    <span class="now">C.01</span>
+    <span class="total"> · 06/22</span>
+    <div class="bar"></div>
+  </div>
+
+  <div class="visual-head">
+    <div class="heading-en">현저히 곤란, 평온의 침해, 조작</div>
+    <h2 class="heading-ko">전부 복제 등에 관한 내용</h2>
+    <div class="heading-bar"></div>
+  </div>
+
+  <div class="visual-stage">
+    <div class="visual-figure">
+      <img src="images/Snipaste_2026-07-27_10-43-47.png" style="width: 100%;">
+    </div>
+    <div class="visual-caption"></div>
+  </div>
+
+  <div class="footer-note"></div>
+
+</section>
+
+<section class="slide type-visual" data-slide-type="visual">
+
+  <div class="meta-tl">
+    <div class="title">디지털포렌식과 형사소송법</div>
+    <div class="sub">제4강_선별압수의 예외</div>
+  </div>
+
+  <div class="progress-tr" style="--progress-pct: 31%;">
+    <span class="now">C.01</span>
+    <span class="total"> · 07/22</span>
+    <div class="bar"></div>
+  </div>
+
+  <div class="visual-head">
+    <div class="heading-en"></div>
+    <h2 class="heading-ko">데이터 전부 복제의 목적</h2>
+    <div class="heading-bar"></div>
+  </div>
+
+  <div class="visual-stage">
+    <div class="visual-figure">
+      <img src="images/Snipaste_2026-07-27_11-19-54.png" style="width: 100%;">
+    </div>
+    <div class="visual-caption"></div>
+  </div>
+
+  <div class="footer-note"></div>
+
+</section>
+
+<section class="slide type-content" data-slide-type="content">
+
+  <div class="meta-tl">
+    <div class="title">디지털포렌식과 형사소송법</div>
+    <div class="sub">제4강_선별압수의 예외</div>
+  </div>
+
+  <div class="progress-tr" style="--progress-pct: 36%;">
+    <span class="now">C.01</span>
+    <span class="total"> · 08/22</span>
+    <div class="bar"></div>
+  </div>
+
+  <div class="content-grid">
+    <div class="content-heading">
+      <div class="heading-en"></div>
+      <h2 class="heading-ko">전부복제를 하는 경우</h2>
+      <div class="heading-bar"></div>
+    </div>
+    <div class="content-side"></div>
+    <div class="content-body">
+      <ul><li>위변조: PC(삭제, 은폐한 정보 정밀 분석)</li><li>복잡성: 모바일, 공작기계(현장에서 선별획득하기에 시간적, 기술적으로 어려움)</li><li>대량성, 삭제 데이터 복구: CCTV(삭제한 자료 복구, 평온 유지 등)</li></ul>
+    </div>
+  </div>
+
+  <div class="footer-note"></div>
+
+</section>
+
+<section class="slide type-chapter" data-slide-type="chapter">
+
+  <div class="wordmark">CHAPTER</div>
+  <div class="bubbles"></div>
+
+  <div class="meta-tl">
+    <div class="title">디지털포렌식과 형사소송법</div>
+    <div class="sub">제4강_선별압수의 예외</div>
+  </div>
+
+  <div class="progress-tr" style="--progress-pct: 50%;">
+    <span class="now">02</span>
+    <span class="total"> / 04</span>
+    <div class="bar"></div>
+  </div>
+
+  <div class="chapter-figure"></div>
+
+  <div class="main">
+    <div class="chapter-kicker">
+      <span class="label">Chapter</span>
+      <span class="num">02</span>
+    </div>
+    <div class="chapter-title">원본반출</div>
+    <div class="divider"></div>
+    <div class="chapter-en">휴대전화 등 압수목적물의 반출은 압수인가</div>
+  </div>
+
+  <div class="signature">section // 02 of 04</div>
+
+</section>
+
+<section class="slide type-content" data-slide-type="content">
+
+  <div class="meta-tl">
+    <div class="title">디지털포렌식과 형사소송법</div>
+    <div class="sub">제4강_선별압수의 예외</div>
+  </div>
+
+  <div class="progress-tr" style="--progress-pct: 45%;">
+    <span class="now">C.02</span>
+    <span class="total"> · 10/22</span>
+    <div class="bar"></div>
+  </div>
+
+  <div class="content-grid">
+    <div class="content-heading">
+      <div class="heading-en"></div>
+      <h2 class="heading-ko">원본반출을 따로 다루는 이유</h2>
+      <div class="heading-bar"></div>
+    </div>
+    <div class="content-side"></div>
+    <div class="content-body">
+      <ul><li><strong>압수물</strong>은 범증을 입증할 사건관계 <strong>증거물</strong></li><li>디지털 증거 수사는 <strong>압수물</strong>(디지털 증거)과 <strong>압수 목적물</strong>(정보저장매체) 양립</li><li>아래의 압수수색 <strong>절차적 사항</strong>에 대한 해답</li><li class="sub">1. <strong>압수목록</strong>에 압수물과 압수 목적물 둘 중 무엇을 기재하여야 하는가</li><li class="sub">2. 압수 목적물은 압수물 <strong>환부 지휘</strong> 대상인가</li><li class="sub">3. 압수 목적물은 그 자체로 <strong>사건을 입증할 증거</strong>인가</li></ul>
+    </div>
+  </div>
+
+  <div class="footer-note"></div>
+
+</section>
+
+<section class="slide type-visual" data-slide-type="visual">
+
+  <div class="meta-tl">
+    <div class="title">디지털포렌식과 형사소송법</div>
+    <div class="sub">제4강_선별압수의 예외</div>
+  </div>
+
+  <div class="progress-tr" style="--progress-pct: 50%;">
+    <span class="now">C.02</span>
+    <span class="total"> · 11/22</span>
+    <div class="bar"></div>
+  </div>
+
+  <div class="visual-head">
+    <div class="heading-en">디지털포렌식 관련 논문 함께 읽기</div>
+    <h2 class="heading-ko">원본반출한 정보저장매체의 지위</h2>
+    <div class="heading-bar"></div>
+  </div>
+
+  <div class="visual-stage">
+    <div class="visual-figure">
+      <img src="images/Snipaste_2026-07-27_14-25-15.png" style="width: 100%;">
+    </div>
+    <div class="visual-caption"></div>
+  </div>
+
+  <div class="footer-note"></div>
+
+</section>
+
+<section class="slide type-visual" data-slide-type="visual">
+
+  <div class="meta-tl">
+    <div class="title">디지털포렌식과 형사소송법</div>
+    <div class="sub">제4강_선별압수의 예외</div>
+  </div>
+
+  <div class="progress-tr" style="--progress-pct: 54%;">
+    <span class="now">C.02</span>
+    <span class="total"> · 12/22</span>
+    <div class="bar"></div>
+  </div>
+
+  <div class="visual-head">
+    <div class="heading-en"></div>
+    <h2 class="heading-ko">정보저장매체 원본반출과 압수수색</h2>
+    <div class="heading-bar"></div>
+  </div>
+
+  <div class="visual-stage">
+    <div class="visual-figure">
+      <img src="images/Snipaste_2026-07-27_15-07-06.png" style="width: 100%;">
+    </div>
+    <div class="visual-caption"></div>
+  </div>
+
+  <div class="footer-note"></div>
+
+</section>
+
+<section class="slide type-chapter" data-slide-type="chapter">
+
+  <div class="wordmark">CHAPTER</div>
+  <div class="bubbles"></div>
+
+  <div class="meta-tl">
+    <div class="title">디지털포렌식과 형사소송법</div>
+    <div class="sub">제4강_선별압수의 예외</div>
+  </div>
+
+  <div class="progress-tr" style="--progress-pct: 75%;">
+    <span class="now">03</span>
+    <span class="total"> / 04</span>
+    <div class="bar"></div>
+  </div>
+
+  <div class="chapter-figure"></div>
+
+  <div class="main">
+    <div class="chapter-kicker">
+      <span class="label">Chapter</span>
+      <span class="num">03</span>
+    </div>
+    <div class="chapter-title">일반 영장주의의 금지</div>
+    <div class="divider"></div>
+    <div class="chapter-en">압수수색할 대상의 특정</div>
+  </div>
+
+  <div class="signature">section // 03 of 04</div>
+
+</section>
+
+<section class="slide type-content" data-slide-type="content">
+
+  <div class="meta-tl">
+    <div class="title">디지털포렌식과 형사소송법</div>
+    <div class="sub">제4강_선별압수의 예외</div>
+  </div>
+
+  <div class="progress-tr" style="--progress-pct: 63%;">
+    <span class="now">C.03</span>
+    <span class="total"> · 14/22</span>
+    <div class="bar"></div>
+  </div>
+
+  <div class="content-grid">
+    <div class="content-heading">
+      <div class="heading-en">무엇이 더 민감할까</div>
+      <h2 class="heading-ko">철수의 일기 제출</h2>
+      <div class="heading-bar"></div>
+    </div>
+    <div class="content-side"></div>
+    <div class="content-body">
+      <ul><li>담임 선생님은 철수에게 하루 있었던 일을 일기로 적어 제출하는 과제를 부여했다. 다음 날 철수가 과제를 제출했더니 담임 선생님이 수업 중 일기를 읽었다면</li><li class="sub">1. 부모님 몰래 PC방에 간 사실</li><li class="sub">2. 일기에 기재한 철수의 학교 성적</li><li class="sub">3. 친구와 보낸 일상적 내용</li><li>-&gt; 모두 공개하기 싫은 정보이지만 주관적으로 더욱 공개하기 싫은 정보 또는 일기의 특성상 교사가 확인할 정보가 존재함</li></ul>
+    </div>
+  </div>
+
+  <div class="footer-note"></div>
+
+</section>
+
+<section class="slide type-content" data-slide-type="content">
+
+  <div class="meta-tl">
+    <div class="title">디지털포렌식과 형사소송법</div>
+    <div class="sub">제4강_선별압수의 예외</div>
+  </div>
+
+  <div class="progress-tr" style="--progress-pct: 68%;">
+    <span class="now">C.03</span>
+    <span class="total"> · 15/22</span>
+    <div class="bar"></div>
+  </div>
+
+  <div class="content-grid">
+    <div class="content-heading">
+      <div class="heading-en"></div>
+      <h2 class="heading-ko">압수수색의 범위 제한</h2>
+      <div class="heading-bar"></div>
+    </div>
+    <div class="content-side"></div>
+    <div class="content-body">
+      <ul><li>&lt;사전적 제한&gt; 압수수색할 범위를 사전에 특정</li><li class="sub">휴대전화, 원격지 서버 등 별도 명시(개인정보, 영업기밀 등)</li><li class="sub">예) -&gt; PC만 영장 기재 후 PC 카카오톡, 워크스페이스, 공유폴더 등 원격지 전자정보 및 휴대전화 등 수사 불가</li><li>&lt;사후적 제한&gt; 방어권 부여(참여권 보장 등)</li><li class="sub">참여권 보장, 선별 범위(기간, 탐색 범위 등) 특정</li><li class="sub">선별증거의 <strong>사건 관련성</strong> 대립시 검사 수사 지휘 아래 증거 선별(변호인 의견 기재)</li></ul>
+    </div>
+  </div>
+
+  <div class="footer-note"></div>
+
+</section>
+
+<section class="slide type-visual" data-slide-type="visual">
+
+  <div class="meta-tl">
+    <div class="title">디지털포렌식과 형사소송법</div>
+    <div class="sub">제4강_선별압수의 예외</div>
+  </div>
+
+  <div class="progress-tr" style="--progress-pct: 72%;">
+    <span class="now">C.03</span>
+    <span class="total"> · 16/22</span>
+    <div class="bar"></div>
+  </div>
+
+  <div class="visual-head">
+    <div class="heading-en">2024 디지털포렌식 워킹데이</div>
+    <h2 class="heading-ko">압수수색 영장 실무 대법원 가이드</h2>
+    <div class="heading-bar"></div>
+  </div>
+
+  <div class="visual-stage">
+    <div class="visual-figure">
+      <img src="images/20241112_101926.jpg">
+    </div>
+    <div class="visual-caption">포렌식 판례는 종근당 전|후로 나뉨</div>
+  </div>
+
+  <div class="footer-note"></div>
+
+</section>
+
+<section class="slide type-visual" data-slide-type="visual">
+
+  <div class="meta-tl">
+    <div class="title">디지털포렌식과 형사소송법</div>
+    <div class="sub">제4강_선별압수의 예외</div>
+  </div>
+
+  <div class="progress-tr" style="--progress-pct: 77%;">
+    <span class="now">C.03</span>
+    <span class="total"> · 17/22</span>
+    <div class="bar"></div>
+  </div>
+
+  <div class="visual-head">
+    <div class="heading-en">2024 디지털포렌식 워킹데이</div>
+    <h2 class="heading-ko">압수수색 영장 실무 대법원 가이드</h2>
+    <div class="heading-bar"></div>
+  </div>
+
+  <div class="visual-stage">
+    <div class="visual-figure">
+      <img src="images/20241112_102649.jpg">
+    </div>
+    <div class="visual-caption"></div>
+  </div>
+
+  <div class="footer-note"></div>
+
+</section>
+
+<section class="slide type-visual" data-slide-type="visual">
+
+  <div class="meta-tl">
+    <div class="title">디지털포렌식과 형사소송법</div>
+    <div class="sub">제4강_선별압수의 예외</div>
+  </div>
+
+  <div class="progress-tr" style="--progress-pct: 81%;">
+    <span class="now">C.03</span>
+    <span class="total"> · 18/22</span>
+    <div class="bar"></div>
+  </div>
+
+  <div class="visual-head">
+    <div class="heading-en">2024 디지털포렌식 워킹데이</div>
+    <h2 class="heading-ko">압수수색 영장 실무 대법원 가이드</h2>
+    <div class="heading-bar"></div>
+  </div>
+
+  <div class="visual-stage">
+    <div class="visual-figure">
+      <img src="images/20241112_103059.jpg">
+    </div>
+    <div class="visual-caption">대법원 2009. 3. 12. 선고 2008도763 판결(제주도지사)</div>
+  </div>
+
+  <div class="footer-note"></div>
+
+</section>
+
+<section class="slide type-visual" data-slide-type="visual">
+
+  <div class="meta-tl">
+    <div class="title">디지털포렌식과 형사소송법</div>
+    <div class="sub">제4강_선별압수의 예외</div>
+  </div>
+
+  <div class="progress-tr" style="--progress-pct: 86%;">
+    <span class="now">C.03</span>
+    <span class="total"> · 19/22</span>
+    <div class="bar"></div>
+  </div>
+
+  <div class="visual-head">
+    <div class="heading-en">2011모1839 결정(대법원 전원합의체, 종근당)</div>
+    <h2 class="heading-ko">법원이 발부하는 [영장 별지]</h2>
+    <div class="heading-bar"></div>
+  </div>
+
+  <div class="visual-stage">
+    <div class="visual-figure">
+      <img src="images/04_영장별지_상.JPG" style="width: 100%;">
+<img src="images/04_영장별지_하.JPG" style="width: 100%;">
+    </div>
+    <div class="visual-caption">사건 감독관들이 놓치는 10일 반환 원칙 등</div>
+  </div>
+
+  <div class="footer-note"></div>
+
+</section>
+
+<section class="slide type-chapter" data-slide-type="chapter">
+
+  <div class="wordmark">CHAPTER</div>
+  <div class="bubbles"></div>
+
+  <div class="meta-tl">
+    <div class="title">디지털포렌식과 형사소송법</div>
+    <div class="sub">제4강_선별압수의 예외</div>
+  </div>
+
+  <div class="progress-tr" style="--progress-pct: 100%;">
+    <span class="now">04</span>
+    <span class="total"> / 04</span>
+    <div class="bar"></div>
+  </div>
+
+  <div class="chapter-figure"></div>
+
+  <div class="main">
+    <div class="chapter-kicker">
+      <span class="label">Chapter</span>
+      <span class="num">04</span>
+    </div>
+    <div class="chapter-title">판례 함께 읽어보기</div>
+    <div class="divider"></div>
+    <div class="chapter-en">숙제 함께하기</div>
+  </div>
+
+  <div class="signature">section // 04 of 04</div>
+
+</section>
+
+<section class="slide type-summary" data-slide-type="summary">
+
+  <div class="wordmark">KEY</div>
+
+  <div class="meta-tl">
+    <div class="title">디지털포렌식과 형사소송법</div>
+    <div class="sub">제4강_선별압수의 예외</div>
+  </div>
+
+  <div class="progress-tr" style="--progress-pct: 95%;">
+    <span class="now">C.04</span>
+    <div class="bar"></div>
+  </div>
+
+  <div class="summary-head">
+    <div class="heading-en">Key Takeaways</div>
+    <h2 class="heading-ko">핵심 정리</h2>
+    <div class="heading-bar"></div>
+  </div>
+
+  <p class="summary-lead">한 문장 결론</p>
+
+  <ol class="summary-points">
+    <li>전부복제와 원본반출: 평온유지, 증거인멸, 현장 가능성(복잡성)</li><li>원본반출&lt;&gt;압수: 반출한 기기의 증거 선별 시 압수절차 적용</li><li>판례 함께 읽어보기: 압수수색 절차 전반 이해</li>
+  </ol>
+
+  <div class="footer-note"></div>
+
+</section>
+
+<section class="slide type-closing" data-slide-type="closing">
+
+  <div class="wordmark">END</div>
+  <div class="bubbles"></div>
+
+  <div class="meta-tl">
+    <div class="title">디지털포렌식과 형사소송법</div>
+    <div class="sub">제4강_선별압수의 예외</div>
+  </div>
+
+  <div class="closing-hero">
+    <h1 class="closing-ko">다음 차시</h1>
+    <div class="divider"></div>
+    <div class="closing-en">제5강 전자증거와 전문법칙</div>
+    <p class="closing-prompt"></p>
+    <div class="closing-contact"></div>
+  </div>
+
+  <div class="signature"></div>
+
+</section>
+
+</div>
+
+<div class="nav">
+  <button onclick="navSlide(-1)">◀ PREV</button>
+  <span id="nav-indicator">1 / 22</span>
+  <button onclick="navSlide(1)">NEXT ▶</button>
+</div>
+
+<script>
+  function fitCanvas() {
+    const CW = 1600, CH = 900;
+    const scale = Math.min(window.innerWidth / CW, window.innerHeight / CH);
+    document.documentElement.style.setProperty('--canvas-scale', scale);
+    const aspect = window.innerWidth / window.innerHeight;
+    const boost = aspect < 1 ? 1.35 : (aspect < 1.3 ? 1.15 : 1);
+    document.documentElement.style.setProperty('--auto-boost', boost);
+  }
+  window.addEventListener('resize', fitCanvas);
+  fitCanvas();
+
+  let current = 0;
+  const slides = document.querySelectorAll('.deck > .slide');
+  function show(i) {
+    // 한 프레임 동안 active 클래스를 모두 제거 후 재부여 → CSS 애니메이션 재발동
+    slides.forEach(s => s.classList.remove('active'));
+    void slides[i].offsetWidth; // 강제 reflow
+    slides[i].classList.add('active');
+    document.getElementById('nav-indicator').textContent = `${i+1} / ${slides.length}`;
+  }
+  function navSlide(d) {
+    current = (current + d + slides.length) % slides.length;
+    show(current);
+  }
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight' || e.key === ' ') navSlide(1);
+    if (e.key === 'ArrowLeft') navSlide(-1);
+  });
+  show(0);
+</script>
+
+</body>
+</html>
